@@ -1,0 +1,8 @@
+# Ignore everything
+/*
+
+# but
+!i3
+!i3status
+!nvim
+!.gitignore
