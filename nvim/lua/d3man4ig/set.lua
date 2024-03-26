@@ -1,3 +1,5 @@
+vim.opt.guicursor = "i-ci:blinkon700,r-cr-o:hor20"
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
