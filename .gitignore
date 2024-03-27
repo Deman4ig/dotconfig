@@ -2,7 +2,9 @@
 /*
 
 # but
-!i3
-!i3status
-!nvim
-!.gitignore
+!i3/
+!i3status/
+!nvim/
+!.gitignore/
+
+nvim/plugin
