@@ -27,7 +27,6 @@ return require('packer').startup(function(use)
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         requires = {
-            --- Uncomment the two plugins below if you want to manage the language servers from neovim
             {'williamboman/mason.nvim'},
             {'williamboman/mason-lspconfig.nvim'},
 
@@ -35,7 +34,7 @@ return require('packer').startup(function(use)
             {'neovim/nvim-lspconfig'},
             -- Autocompletion
             {'hrsh7th/nvim-cmp'},
-            {'hrsh8th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-nvim-lsp'},
             {'L3MON4D3/LuaSnip'},
         }
     }
@@ -52,4 +51,5 @@ return require('packer').startup(function(use)
         opts = {
         },
     }
+    use("windwp/nvim-ts-autotag")
 end)
