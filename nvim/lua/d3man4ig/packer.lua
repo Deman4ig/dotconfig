@@ -38,7 +38,6 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
-    use("folke/twilight.nvim")
     use("folke/zen-mode.nvim")
     use {
         "folke/todo-comments.nvim",

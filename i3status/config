@@ -13,8 +13,8 @@ general {
 
 order += "tztime local"
 order += "load"
-order += "memory"
-order += "battery all"
+order += "cpu_temperature all"
+order += "battery 0"
 order += "wireless _first_"
 
 wireless _first_ {
@@ -22,12 +22,15 @@ wireless _first_ {
         format_down = "WiFi: down"
 }
 
-battery all {
-        format = "Battery: %status %remaining"
+battery 0 {
+        format = "ps: %status %remaining"
+        status_full = "fulllll"
+        status_bat = "battery"
+        last_full_capacity = true
 }
 
 load {
-        format = "CPU Usage: %1min"
+        format = "core u: %1min"
 }
 
 memory {
@@ -38,4 +41,7 @@ memory {
 
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
+}
+cpu_temperature all {
+    format = "core t: %degrees C"
 }
